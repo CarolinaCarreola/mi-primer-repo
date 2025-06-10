@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>About - Neurodivergent Auto-Translator</title>
+    <meta name="description" content="Learn about the research behind the corpus-informed, whole-document approach of the Neurodivergent Auto-Translator." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <h1 class="nav-title">Neurodivergent Auto-Translator</h1>
+            <div class="nav-items">
+                <a href="../index.html" class="nav-item">Auto-Translator</a>
+                <a href="corpora.html"" class="nav-item">Corpora</a>
+                <a href="about.html" class="nav-item" style="border-bottom-color: var(--gray-300);">About</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <!-- All content in one continuous section -->
+        <section class="section-card">
+            <h2>About the Neurodivergent Auto-Translator</h2>
+            <p><strong>What happens when you try to translate complex ideas about the human mind using rigid, sentence-by-sentence machines?</p></strong>
+            <p>Most of the time, you lose the nuance.</p>
+            <p>The <strong>Neurodivergent Auto-Translator</strong> is an experiment that involves doing things differently. Developed as part of a translation technology workshop at UNAM San Miguel de Allende, this project explores how we can build automatic translation tools that are more ethically grounded, context-aware, and linguistically informed, starting with the language of neurodivergence.</p>
+
+            <h2 style="margin-top: 1.5rem;">What Makes Translation Pragmatically Appropriate?</h2>
+            <p>Pragmatics in translation serves as a measure of coherence on two crucial levels:</p>
+            
+            <p style="margin-top: 1.5rem;"><strong>Local coherence:</strong> Is the translation coherent as a complete piece of content for the destination culture? Does information flow naturally and meet audience expectations for that type of text?</p>
+
+            <p style="margin-bottom: 1.5rem;"><strong>Global coherence:</strong> Does the translation fit with the broader knowledge, needs, and cultural expectations of the destination audience?</p>
+
+            <p>Achieving pragmatically appropriate translation requires refashioning ideas so they align with both document-level expectations (how this type of text typically works) and cultural expectations (how this audience thinks and communicates). Good writing will sometimes break the rules, but we believe sentence-by-sentence translation has little chance of achieving true pragmatic appropriateness.</p>
+
+            <h2 style="margin-top: 1.5rem;">Our Corpus-Informed Approach</h2>
+            <p style="margin-bottom: 1.5rem;">The Neurodivergent Auto-Translator is built around two major shifts in how we approach translation:</p>
+            
+            <div class="spex-grid">
+                <div class="spex-box">
+                    <h3>1. Whole-document translation</h3>
+                    <p>We move beyond sentence-by-sentence processing to consider full texts as coherent, structured arguments, fundamental in academic and clinical writing about neurodivergence.</p>
+                </div>
+                <div class="spex-box">
+                    <h3>2. Corpus-informed methodology</h3>
+                    <p>Rather than using traditional translation data, we rely on authentic writing samples from the fields of psychology and psychiatry, focusing on how neurodivergence is represented in real-world academic discourse.</p>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 1.0rem;">How Our Specialized Corpora Work</h2>
+            <p style="margin-bottom: 1.5rem;">We curate carefully selected corpora that reflect how professionals actually write about neurodivergence in specific contexts. From this material, we generate vectors at multiple levels of organization:</p>
+            
+            <table style="margin-bottom: 1.5rem;">
+                <tr>
+                    <td><strong>✅ Document-level vectors</strong></td>
+                    <td>Used to analyze text organization and discourse patterns</td>
+                </tr>
+                <tr>
+                    <td><strong>✅ Section-level vectors</strong></td>
+                    <td>Used to identify relevant passages for context</td>
+                </tr>
+                <tr>
+                    <td><strong>✅ Paragraph-level vectors</strong></td>
+                    <td>Used for concept and terminology matching</td>
+                </tr>
+            </table>
+
+            <h2 style="margin-top: 1.5rem;">Why We Avoid Translation Data</h2>
+            <p>We deliberately exclude translations from our corpora because of inherent characteristics identified in <a href="https://www.taylorfrancis.com/chapters/edit/10.4324/9780429024221-4/corpus-based-translation-studies-mona-baker" target="_blank">Baker’s research</a> on translation tendencies:</p>
+            
+            <ul style="margin: 1.5rem 0;">
+                <li style="margin-bottom: 0.75rem;"><strong>1️⃣ Making implicit information overly explicit,</strong> eliminating nuance</li>
+                <li style="margin-bottom: 0.75rem;"><strong>2️⃣ Using unnecessarily simplified language</strong></li>
+                <li style="margin-bottom: 0.75rem;"><strong>3️⃣ Mimicking destination language structures</strong> to an exaggerated degree</li>
+                <li style="margin-bottom: 0.75rem;"><strong>4️⃣ Taking a “safe middle road”</strong> between free and literal translation</li>
+            </ul>
+            
+            <p>Most publicly available translations were also produced sentence-by-sentence, imposing source language structures onto target languages. This creates writing that doesn’t reflect how content is naturally produced in the destination language.</p>
+
+            <h2 style="margin-top: 1.5rem;">Transparent and Ethical Development</h2>
+            <p style="margin-bottom: 1.5rem;"><strong>Curation is key.</strong> Following <a href="https://s10251.pcdn.co/pdf/2021-bender-parrots.pdf" target="_blank">Bender and Gebru’s research</a>, we recognize that the opacity of training data in large language models amplifies problematic biases, misinformation, and English-centric perspectives. Carefully selecting and transparently citing our corpus sources is therefore fundamental to our approach.</p>
+
+            <h2 style="margin-top: 1.5rem;">Current Implementation</h2>
+            <p style="margin-bottom: 1.5rem;">While building toward our vision, this first iteration incorporates the following technologies. We’ve also worked extensively with Claude Sonnet 4 during code development, and DeepSeek contributed key recommendations for model selection.</p>
+            
+            <div class="corpus-info" style="margin-bottom: 1.5rem;">
+                <ul>
+                    <li><code>jina-embeddings-v3</code> model for corpus vectorization and input feature extraction</li>
+                    <li>DeepSeek for English-Spanish and Spanish-English translation</li>
+                </ul>
+            </div>
+            
+            <p>We’re starting small to build thoughtfully and move away from harmful industry trends while developing our pragmatic approach.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Neurodivergent Auto-Translator - UNAM-SMA</p>
+        <p>By Carolina Carreola - 2025</p>
+    </footer>
+
+    <script>
+        // Simple script to highlight the active navigation item
+        document.addEventListener('DOMContentLoaded', function() {
+            const aboutLink = document.querySelector('a[href="about.html"]');
+            if (aboutLink) {
+                aboutLink.style.color = 'var(--gray-900)';
+            }
+        });
+    </script>
+</body>
+</html>

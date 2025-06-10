@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Corpora - Neurodivergent Auto-Translator</title>
+    <meta name="description" content="Explore the curated and authentic authentic English and Spanish writing samples that inform the Neurodivergent Auto-Translator’s translation outputs in the domain of Psychology and Psychiatry, with a focus on academic discourse around neurodivergence." />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <h1 class="nav-title">Neurodivergent Auto-Translator</h1>
+            <div class="nav-items">
+                <a href="../index.html" class="nav-item">Auto-Translator</a>
+                <a href="corpora.html" class="nav-item" style="border-bottom-color: var(--gray-300);">Corpora</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <section class="section-card">
+            <h2>Corpus Sources</h2>
+            <p>Our corpus-informed approach has been developed specifically for the domain of <strong>Psychology and Psychiatry</strong>, with a focus on academic discourse around <strong>neurodivergence</strong>.</p>
+            
+            <p style="margin-top: 1rem;">The documents used in this first version were carefully selected to reflect authentic writing patterns in English and Spanish within this domain. These sources help our translation system recognize how ideas related to mental health, diagnosis, neurodevelopmental conditions, and identity are naturally expressed across languages.</p>
+            <p style="margin-top: 1rem;">We’re currently working with academic articles, clinical guidelines, and institutional publications that represent how professionals write about neurodivergence in real-world contexts.</p>
+        </section>
+
+
+        <!-- Loading indicator -->
+        <div id="loadingIndicator" class="section-card">
+            <p style="text-align: center; color: var(--gray-500);">Loading corpus sources...</p>
+        </div>
+
+        <!-- Error message -->
+        <div id="errorMessage" class="section-card hidden">
+            <p style="text-align: center; color: #991b1b;">Unable to load corpus data. Please try again later.</p>
+        </div>
+
+        <!-- English corpus section -->
+        <section id="englishCorpus" class="section-card hidden">
+            <h2>English Sources</h2>
+            <div id="englishCards" class="corpus-grid"></div>
+        </section>
+
+        <!-- Spanish corpus section -->
+        <section id="spanishCorpus" class="section-card hidden">
+            <h2>Spanish Sources</h2>
+            <div id="spanishCards" class="corpus-grid"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Neurodivergent Auto-Translator - UNAM-SMA</p>
+        <p>By Carolina Carreola - 2025</p>
+    </footer>
+
+    <script>
+        // Simple script to highlight the active navigation item
+        document.addEventListener('DOMContentLoaded', function() {
+            const aboutLink = document.querySelector('a[href="about.html"]');
+            if (aboutLink) {
+                aboutLink.style.color = 'var(--gray-900)';
+            }
+        });
+    </script>
+    <script src="js/corpora-page.js"></script>
+</body>
+</html>
